@@ -1,0 +1,24 @@
+<div class="span12">
+   <div class="projects">
+       <header>
+           <h1>GitHub Projects</h1>
+           <hr />
+       </header>
+            <ul class="thumbnails">
+              <li ng-repeat="repo in repositories">
+                <div class="thumbnail">
+                  <img src="https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" width="200px" height="200px" alt="">
+                  <h3>{{repo.name}}</h3>
+                  <p>{{repo.description}}</p>
+                  <div class="info">
+                      Language: <span class="label label-inverse">{{repo.language}}</span>
+                  </div>
+                  <hr />
+                  <div>
+                      <a class="btn-view" href="{{repo.html_url}}" target="_blank">View Project</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+   </div>
+</div>

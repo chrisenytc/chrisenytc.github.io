@@ -1,0 +1,42 @@
+<div class="span12">
+    <div class="page-container">
+        <header>
+            <h1>Contact Me</h1>
+            <hr />
+        </header>
+            <div class="page-content">
+                <form class="form-horizontal" method="post" action="">
+                    <div class="control-group">
+                        <label class="control-label" for="">Name</label>
+                        <div class="controls">
+                            <input type="text" class="input-xxlarge" ng-model="data.name" plaeholder="Your Name"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="">Email</label>
+                        <div class="controls">
+                            <input type="email" class="input-xxlarge" ng-model="data.email" plaeholder="Your Email"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="">Subject</label>
+                        <div class="controls">
+                            <input type="text" class="input-xxlarge" ng-model="data.subject" plaeholder="Subject"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="">Message</label>
+                        <div class="controls">
+                            <textarea rows="10" class="input-xxlarge" ng-model="data.message">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" ng-click="send()" class="btn btn-inverse">Submit</button> 
+                        <button type="reset" class="btn">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

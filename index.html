@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="chris" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Christopher EnyTC</title>
+        <!-- Bootstrap -->
+        <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Lekton|Ubuntu+Mono:400,700" type="text/css" rel="stylesheet">
+        <link href="//cdn.jsdelivr.net/bootstrap/2.3.2/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="//cdn.jsdelivr.net/bootstrap/2.3.2/css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container container-fluid">
+                <div class="row-fluid">
+                    <div class="span4">
+                        <header class="main-header">
+                                <div class="header-wrap">
+                                    <div class="logo">
+                                    <img class="img-rounded img-polaroid" alt="Christopher EnyTC" src="http://www.gravatar.com/avatar/95560a7a009026f7cab205de25bb9e13?s=120" width="120px" height="120px" />
+                                    <h4 class="text-center site-title">Christopher</h4>
+                                    <h5 class="text-center site-title">EnyTC</h5>
+                                    
+                                </div>
+                                <br />
+                                <nav id="navbar" class="main-navbar">
+                                    <ul class="nav nav-pills nav-stacked">
+                                        <li class="active"><a class="text-center" href="#/">Home</a></li>
+                                        <li><a class="text-center" href="#/about">About</a></li>
+                                        <li>
+                                            <a class="text-center" href="#/projects">Projects</a>
+                                                <ul class="nav nav-pills nav-stacked">
+                                                    <li><a class="text-center" href="#/projects/github">GitHub</a></li>
+                                                </ul>
+                                        </li>
+                                        <li>
+                                            <a class="text-center" href="#/blog">Blog</a>
+                                                <ul class="nav nav-pills nav-stacked">
+                                                    <li><a class="text-center" href="#/blog/category/php">PHP</a></li>
+                                                    <li><a class="text-center" href="#/blog/category/ruby">Ruby</a></li>
+                                                    <li><a class="text-center" href="#/blog/category/python">Python</a></li>
+                                                    <li><a class="text-center" href="#/blog/category/java">Java</a></li>
+                                                    <li><a class="text-center" href="#/blog/category/javascript">JavaScript</a></li>
+                                                </ul>
+                                        </li>
+                                        <li><a class="text-center" href="#/contact">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <br />
+                            </div>
+                        </header>
+                    </div>
+                    <div class="span8">
+                        <div class="row-fluid">
+                            <div ng-view></div>
+                        </div>
+                    </div>
+                </div>
+        </div> <!--/container-fluid-->
+        <!--JS-->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/modernizr/2.6.2/modernizr.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/controllers.js"></script>
+    </body>
+</html>
