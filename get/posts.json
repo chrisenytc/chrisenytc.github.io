@@ -2,7 +2,7 @@
 	{
 		"slug": "hello-world",
 		"title": "Hello World",
-		"url": "http://chris.enytc.com/blog/hello-world",
+		"url": "http://chris.enytc.com/#/blog/hello-world",
 		"date": "2013/09/26",
 		"author": {
 			"name": "Christopher EnyTC",
