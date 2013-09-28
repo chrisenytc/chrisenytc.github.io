@@ -1,0 +1,23 @@
+/* TEAM */
+
+ChrisEnyTC: Christopher EnyTC.
+Site: http://chris.enytc.com
+Twitter: @chrisenytc
+Location: New York, USA
+[...]
+
+
+
+/* THANKS */
+
+Name: Chris.EnyTC.com
+[...]
+
+
+
+/* SITE */
+
+Last update: 2013/09/25
+Standards: HTML5, CSS3, JavaScript.
+Components: Modernizr, jQuery, AngularJS, Bootstrap.
+Software: Brackets, GruntJS, Bower, Yeoman, LESS, CoffeeScript.
