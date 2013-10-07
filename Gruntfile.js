@@ -114,12 +114,12 @@ module.exports = function(grunt) {
             mangle: false,
           },
           basic: {
-            src: ['assets/lib/jquery/jquery.min.js', 'assets/lib/modernizr/modernizr.min.js', 'assets/lib/angular/angular.min.js'],
-            dest: '<%= dirs.js %>/dependencies.min.js',
+            src: ['assets/lib/jquery/jquery.min.js', 'assets/lib/angular/angular.min.js'],
+            dest: '<%= dirs.js %>/dependencies.min.js'
           },
           dep: {
             src: ['assets/js/app.min.js', 'assets/js/controllers.min.js'],
-            dest: '<%= dirs.js %>/main.min.js',
+            dest: '<%= dirs.js %>/main.min.js'
           }
         },
 
