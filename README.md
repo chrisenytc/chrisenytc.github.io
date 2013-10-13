@@ -1,4 +1,4 @@
-Christopher EnyTC
+Christopher EnyTC [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/chrisenytc/chrisenytc.github.io/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 ===
 
 Portfolio and Blog
