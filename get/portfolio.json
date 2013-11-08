@@ -1,65 +1,74 @@
 [
-	{
-		"title":"JerLogin",
-		"img":"/assets/img/portfolio/jerloginv1.png",
-		"link":"#",
-    "date": "2013/8",
-		"client":"Anonymous",
-		"features":"HTML5, CSS3, JavaScript, Twitter Bootstrap, jQuery, Laravel 4 and MySql",
-		"resume":"The JerLogin is a system for managing user and files protected from unauthorized access using the framework Laravel 4 and MySQL."
-	},
-	{
-		"title":"Christopher EnyTC",
-		"img":"/assets/img/portfolio/chrisenytcv2.png",
-		"link":"http://chris.enytc.com",
-    "date": "2013/8",
-		"client":"Me",
-		"features":"HTML5, CSS3, JavaScript, CoffeeScript, LESS, Twitter Bootstrap, jQuery, AngularJS and JSON",
-		"resume":"This is my current website made using only JavaScript to AngularJS."
-	},
-	{
-		"title":"VaiPra.La",
-		"img":"/assets/img/portfolio/vaipralav1.png",
-		"link":"http://vaipra.la",
-    "date": "2013/7",
-		"client":"VaiPra.La",
-		"features":"HTML5, CSS3, CoffeeScript, LESS, Twitter Bootstrap, jQuery, AngularJS, JSON, NodeJS and RedisDB",
-		"resume":"The VaiPra.la is a generating system using only AngularJS shortened urls to access the API and generate shortened urls shortened links and access done with NodeJS and MongoDB."
-	},
   {
-		"title":"Fri.la",
-		"img":"/assets/img/portfolio/frilalanding1.png",
-		"link":"http://fri.la",
+    "title":"LivBox",
+    "img":"/assets/img/portfolio/livibox1.png",
+    "link":"http://livbox.github.io/",
+    "date": "2013/10",
+    "client":"Me",
+    "features":"HTML5, CSS3, JavaScript, Twitter Bootstrap, jQuery, Laravel 4 and MySql",
+    "resume":"LivBox is a file manager. Was created based on the need to manage files using a local network, where each user has an account, can store files, create folders and share files with other users of the system, all with the minimum possible setting. The LivBox is designed to be optimized for local networks, but functions normally in open networks like the Internet."
+  },
+  {
+    "title":"JerLogin",
+    "img":"/assets/img/portfolio/jerloginv1.png",
+    "link":"#",
+    "date": "2013/8",
+    "client":"Anonymous",
+    "features":"HTML5, CSS3, JavaScript, Twitter Bootstrap, jQuery, Laravel 4 and MySql",
+    "resume":"The JerLogin is a system for managing user and files protected from unauthorized access using the framework Laravel 4 and MySQL."
+  },
+  {
+    "title":"Christopher EnyTC",
+    "img":"/assets/img/portfolio/chrisenytcv2.png",
+    "link":"http://chris.enytc.com",
+    "date": "2013/8",
+    "client":"Me",
+    "features":"HTML5, CSS3, JavaScript, CoffeeScript, LESS, Twitter Bootstrap, jQuery, AngularJS and JSON",
+    "resume":"This is my current website made using only JavaScript to AngularJS."
+  },
+  {
+    "title":"VaiPra.La",
+    "img":"/assets/img/portfolio/vaipralav1.png",
+    "link":"http://vaipra.la",
     "date": "2013/7",
-		"client":"Fri.La",
-		"features":"HTML5, CSS3, JavaScript and LaunchRock",
-		"resume":"Fri.LaLanding page created using the plataform of LaunchRock."
-	},
-	{
-		"title":"Chris Template",
-		"img":"/assets/img/portfolio/chrisenytcv1.png",
-		"link":"http://chris.enytc.com",
+    "client":"VaiPra.La",
+    "features":"HTML5, CSS3, CoffeeScript, LESS, Twitter Bootstrap, jQuery, AngularJS, JSON, NodeJS and RedisDB",
+    "resume":"The VaiPra.la is a generating system using only AngularJS shortened urls to access the API and generate shortened urls shortened links and access done with NodeJS and MongoDB."
+  },
+  {
+    "title":"Fri.la",
+    "img":"/assets/img/portfolio/frilalanding1.png",
+    "link":"http://fri.la",
+    "date": "2013/7",
+    "client":"Fri.La",
+    "features":"HTML5, CSS3, JavaScript and LaunchRock",
+    "resume":"Fri.LaLanding page created using the plataform of LaunchRock."
+  },
+  {
+    "title":"Chris Template",
+    "img":"/assets/img/portfolio/chrisenytcv1.png",
+    "link":"http://chris.enytc.com",
     "date": "2013/5",
-		"client":"Me",
-		"features":"HTML5, CSS3, JavaScript, Twitter Bootstrap, jQuery and AngularJS",
-		"resume":"This is my old website made using only JavaScript to AngularJS."
-	},
+    "client":"Me",
+    "features":"HTML5, CSS3, JavaScript, Twitter Bootstrap, jQuery and AngularJS",
+    "resume":"This is my old website made using only JavaScript to AngularJS."
+  },
   {
-		"title":"LaykMusic",
-		"img":"/assets/img/portfolio/laykmusiclanding1.png",
-		"link":"http://laykmusic.com",
+    "title":"LaykMusic",
+    "img":"/assets/img/portfolio/laykmusiclanding1.png",
+    "link":"http://laykmusic.com",
     "date": "2013/2",
-		"client":"LaykMusic",
-		"features":"HTML5, CSS3, JavaScript and LaunchRock",
-		"resume":"LaykMusic Landing page created using the plataform of LaunchRock."
-	},
+    "client":"LaykMusic",
+    "features":"HTML5, CSS3, JavaScript and LaunchRock",
+    "resume":"LaykMusic Landing page created using the plataform of LaunchRock."
+  },
   {
-		"title":"NTCMS",
-		"img":"/assets/img/portfolio/ntcms.png",
-		"link":"#",
+    "title":"NTCMS",
+    "img":"/assets/img/portfolio/ntcms.png",
+    "link":"#",
     "date": "2012/11",
-		"client":"EnyTC",
-		"features":"HTML, CSS, JavaScript, PHP and MySql",
-		"resume":"NTCMS is a Content Manager System created with PHP and MySQL."
-	}
+    "client":"EnyTC",
+    "features":"HTML, CSS, JavaScript, PHP and MySql",
+    "resume":"NTCMS is a Content Manager System created with PHP and MySQL."
+  }
 ]

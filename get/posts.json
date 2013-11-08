@@ -1,18 +1,18 @@
 [
-	{
-		"slug": "hello-world",
-		"title": "Hello World",
-		"url": "http://chris.enytc.com/#/blog/hello-world",
-		"date": "2013/09/26",
-		"author": {
-			"name": "Christopher EnyTC",
-			"url": "http://chris.enytc.com"
-		},
-		"categories": [
-			{"name": "Hello"},
+  {
+    "slug": "hello-world",
+    "title": "Hello World",
+    "url": "http://chrisenytc.github.io/#/blog/hello-world",
+    "date": "2013/09/26",
+    "author": {
+      "name": "Christopher EnyTC",
+      "url": "http://chris.enytc.com"
+    },
+    "categories": [
+      {"name": "Hello"},
       {"name": "world"},
       {"name": "chrisenytc"}
-		],
-		"content": "Hello, My name is Christopher EnyTC. I have 20 years old and i'm passionate about programming and innovative technologies, spend my day listening to music, studying something interesting or working on some project. In this blog I will be passing everything I know and things of day-to-day life of a programmer. Currently I'm working on a project called Jakll.js and also write articles for NLabs. I love NodeJS, Ruby, Ruby on Rails, Python, JavaScript, jQuery and AngularJS, mainly MongoDB NoSQL enthusiast. Welcome to my world."
-	}
+    ],
+    "content": "Hello, My name is Christopher EnyTC. I have 20 years old and i'm passionate about programming and innovative technologies, spend my day listening to music, studying something interesting or working on some project. In this blog I will be passing everything I know and things of day-to-day life of a programmer. Currently I'm working on a project called Jakll.js and also write articles for NLabs. I love NodeJS, Ruby, Ruby on Rails, Python, JavaScript, jQuery and AngularJS, mainly MongoDB NoSQL enthusiast. Welcome to my world."
+  }
 ]
