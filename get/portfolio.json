@@ -1,8 +1,26 @@
 [
   {
-    "title":"LivBox",
-    "img":"/assets/img/portfolio/livibox1.png",
+    "title":"Badges",
+    "img":"/assets/img/portfolio/badges1.png",
+    "link":"http://badges.enytc.com/",
+    "date": "2013/10",
+    "client":"Me",
+    "features":"HTML5, CSS3, JavaScript, PureCSS, jQuery, Ember.js and Sails.js",
+    "resume":"Badges is a badge manager for make a version badges to your projects."
+  },
+  {
+    "title":"LivBox Site",
+    "img":"/assets/img/portfolio/livbox2.png",
     "link":"http://livbox.github.io/",
+    "date": "2013/10",
+    "client":"Me",
+    "features":"HTML5, CSS3, JavaScript, Twitter Bootstrap, jQuery, Laravel 4 and MySql",
+    "resume":"LivBox is a file manager. Was created based on the need to manage files using a local network, where each user has an account, can store files, create folders and share files with other users of the system, all with the minimum possible setting. The LivBox is designed to be optimized for local networks, but functions normally in open networks like the Internet."
+  },
+  {
+    "title":"LivBox",
+    "img":"/assets/img/portfolio/livbox1.png",
+    "link":"https://github.com/chrisenytc/livbox",
     "date": "2013/10",
     "client":"Me",
     "features":"HTML5, CSS3, JavaScript, Twitter Bootstrap, jQuery, Laravel 4 and MySql",
