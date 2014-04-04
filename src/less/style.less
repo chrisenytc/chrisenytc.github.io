@@ -3,7 +3,7 @@
   *
   * Author: Christopher EnyTC <chrisenytc@gmail.com>
   * Author URL: chris.enytc.com
-  * Version: 0.0.2
+  * Version: 0.3.0
   *
   */
 
@@ -95,7 +95,7 @@
 body {
   font-family: @baseFont, @secondaryFont, sans-serif;
   font-size: @fontSize;
-  background-color: #cccccc;
+  background-color: @bodyColor;
   color: @textColor;
   overflow-x: hidden;
 }
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 // Addons
 // *---------------------------------------------------------------------------------------------------------------* //
 
-btn-big {
+.btn-big {
   margin: 20px;
 }
 
@@ -125,6 +125,10 @@ btn-big {
     color: #ffffff;
     .transition(0.8s);
   }
+}
+
+.label-featured {
+  background-color: @primaryColor;
 }
 
 .label-tag {
@@ -192,6 +196,14 @@ btn-big {
 
 .img-feature {
   .img-feature();
+}
+
+#disqus_thread {
+  color: @primaryColor;
+}
+
+#disqus_thread a {
+  color: @primaryColor;
 }
 
 // Header

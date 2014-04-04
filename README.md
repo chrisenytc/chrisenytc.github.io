@@ -1,27 +1,33 @@
-Christopher EnyTC [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/chrisenytc/chrisenytc.github.io/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+Christopher EnyTC [![GH version](https://badge-me.herokuapp.com/api/gh/chrisenytc/chrisenytc.github.io.png)](http://badges.enytc.com/for/gh/chrisenytc/chrisenytc.github.io)
 ===
 
 Portfolio and Blog
 
-### Usage
+## Usage
 
 Install dependencies
 
-`sudo npm install && bower install`
+```bash
+$ npm install && bower install
+```
 
 Build Project
 
-`grunt`
+```bash
+$ grunt
+```
 
 Run Project`
 
-`grunt server`
+```bash
+$ grunt server
+```
 
-### License
+## License
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Christopher EnyTC
+Copyright (c) 2014, Christopher EnyTC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

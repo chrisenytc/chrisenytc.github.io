@@ -1,48 +1,48 @@
 <div class="blog">
-  <header>
-      <div class="circle-icon">
-        <i class="icon-coffee icon-3x"></i>
-        <span>Blog</span>
-      </div>
-      <hr />
+    <header>
+        <div class="circle-icon">
+            <i class="icon-coffee icon-3x"></i>
+            <span>Blog</span>
+        </div>
+        <hr />
     </header>
-  <section class="page-content">
-  <!--post-->
-  <article class="article-item" data-ng-repeat="post in posts | filter:searchBox | startFrom:currentPage*pageSize | limitTo:pageSize">
-    <div class="article-data">
-      <h2>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h2>
-      <hr />
+    <section class="page-content">
+        <!--post-->
+        <article class="article-item" data-ng-repeat="post in posts | filter:searchBox | startFrom:currentPage*pageSize | limitTo:pageSize">
+            <div class="article-data">
+                <h2>
+                    <a data-ng-href="{{ post.url }}" data-ng-bind="post.title"></a>
+                </h2>
+                <hr />
+            </div>
+            <div class="article-content">
+                <p data-ng-bind="post.content"></p>
+            </div>
+            <div class="article-info">
+                <a class="btn btn-transparent btn-large" data-ng-href="{{ post.url }}">
+                    <i class="icon-link"></i> Read More</a>
+                <hr />
+                <div class="article-data">
+                    <div class="left">
+                        <p>Posted on
+                            <span class="featured" data-ng-bind="post.date"></span> by
+                            <a class="author" data-ng-href="{{ post.author.url }}" data-toggle="tooltip" data-animation="true" title="View Posts of {{ post.author.name }}" data-ng-bind="post.author.name"></a>
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            <span class="label label-featured label-tag" data-ng-repeat="tag in post.tags" data-ng-bind="tag.name"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </article>
+        <!--endPosts-->
+    </section>
+    <div class="load-posts">
+        <button class="btn btn-transparent btn-large" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">Previous</button>
+        <span class="label label-featured">{{currentPage+1}}/{{numberOfPages()}}</span>
+        <button class="btn btn-transparent btn-large" ng-disabled="currentPage >= posts.length/pageSize - 1" ng-click="currentPage=currentPage+1">Next</button>
     </div>
-    <div class="article-content">
-      <p>{{ post.content }}</p>
-    </div>
-    <div class="article-info">
-      <a class="btn btn-transparent btn-large" href="{{ post.url }}">
-        <i class="icon-link"></i> Read More</a>
-      <hr />
-      <div class="article-data">
-        <div class="left">
-          <p>Posted on
-            <span class="featured">{{ post.date }}</span> by
-            <a class="author" href="{{ post.author.url }}" data-toggle="tooltip" data-animation="true" title="View Posts of {{ post.author.name }}">{{ post.author.name }}</a>
-          </p>
-        </div>
-        <div class="right">
-          <p>
-            <span class="label label-primary label-tag" data-ng-repeat="category in post.categories">{{ category.name }}</span>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="clear"></div>
-  </article>
-  <!--endPosts-->
-</section>
-<div class="load-posts">
-  <button class="btn btn-transparent btn-large" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">Previous</button>
-  <span class="label label-primary">{{currentPage+1}}/{{numberOfPages()}}</span>
-  <button class="btn btn-transparent btn-large" ng-disabled="currentPage >= posts.length/pageSize - 1" ng-click="currentPage=currentPage+1">Next</button>
-</div>
 </div>

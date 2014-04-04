@@ -1,18 +1,18 @@
-[
-  {
+[{
     "slug": "hello-world",
     "title": "Hello World",
-    "url": "http://chrisenytc.github.io/#/blog/hello-world",
+    "url": "/#/blog/hello-world",
     "date": "2013/09/26",
     "author": {
-      "name": "Christopher EnyTC",
-      "url": "http://chris.enytc.com"
+        "name": "Christopher EnyTC",
+        "url": "http://chris.enytc.com"
     },
-    "categories": [
-      {"name": "Hello"},
-      {"name": "world"},
-      {"name": "chrisenytc"}
-    ],
-    "content": "Hello, My name is Christopher EnyTC. I have 20 years old and i'm passionate about programming and innovative technologies, spend my day listening to music, studying something interesting or working on some project. In this blog I will be passing everything I know and things of day-to-day life of a programmer. Currently I'm working on a project called Jakll.js and also write articles for NLabs. I love NodeJS, Ruby, Ruby on Rails, Python, JavaScript, jQuery and AngularJS, mainly MongoDB NoSQL enthusiast. Welcome to my world."
-  }
-]
+    "tags": [{
+        "name": "Hello"
+    }, {
+        "name": "world"
+    }, {
+        "name": "chrisenytc"
+    }],
+    "content": "Hello, My name is Christopher EnyTC. I'm a Back-End Developer and working with JavaScript/Node.js, Python, Ruby and PHP. I have 20 years and am passionate about programming and innovative technologies. I spend my day listening to music, studying something interesting or working on some open-source project. In this blog I will be passing all they know and things of day to day life of a programmer. I'm currently working on a project called Ully and also write articles for DevCenter. I love Javascript/NodeJS, Python, Ruby, Erlang and Go. I'm an enthusiast NoSQL, especially MongoDB and RedisDB. Welcome to my world."
+}]

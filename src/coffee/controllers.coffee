@@ -9,28 +9,23 @@
 #
 
 window.indexCtrl = ($scope) ->
-  $ = jQuery
 
 window.aboutCtrl = ($scope, $http, $window, $routeParams) ->
-  $ = jQuery
   $http.get("/get/employment.json").success (data) ->
     $scope.employment = data
   $http.get("/get/education.json").success (data) ->
     $scope.education = data
 
 window.projectsCtrl = ($scope, $http, $window, $routeParams) ->
-  $ = jQuery
-  $http.get("https://api.github.com/users/chrisenytc/repos").success (data) ->
+  $http.get("https://api.github.com/user/repos?sort=created&direction=desc&type=owner&access_token=a200c6fdf3180091fd4d333812b05334af05630f").success (data) ->
     $scope.status = true
     $scope.repositories = data
 
 window.portfolioCtrl = ($scope, $http, $window, $routeParams) ->
-  $ = jQuery
   $http.get("/get/portfolio.json").success (data) ->
     $scope.items = data
 
 window.blogCtrl = ($scope, $http, $window, $routeParams) ->
-  $ = jQuery
   $scope.currentPage = 0
   $scope.pageSize = 5
   $http.get("/get/posts.json").success (data) ->
@@ -41,7 +36,6 @@ window.blogCtrl = ($scope, $http, $window, $routeParams) ->
 
 window.postCtrl = ($scope, $http, $window, $routeParams) ->
 
-  $ = jQuery
   $http.get("/get/posts.json").success (data) ->
     $scope.posts = data
     search = $.grep($scope.posts, (e, i) ->
@@ -58,10 +52,7 @@ window.postCtrl = ($scope, $http, $window, $routeParams) ->
 
 window.contactCtrl = ($scope, $http, $window, $routeParams) ->
 
-  $ = jQuery
   $scope.send = ->
     console.log $scope.data
 
 window.notFoundCtrl = ($scope) ->
-
-  $ = jQuery
