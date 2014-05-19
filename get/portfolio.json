@@ -1,4 +1,12 @@
 [{
+    "title": "VaiPra.La",
+    "img": "/assets/img/portfolio/vaiprala2.png",
+    "link": "http://vaipra.la",
+    "date": "2014/6",
+    "client": "VaiPra.La",
+    "features": "HTML5, CSS3, Twitter Bootstrap, jQuery, Modernizr, AngularJS, JSON, reCaptcha, Node.js and MongoDB",
+    "resume": "VaiPra.la is a very fast url shortener built with node.js and mongodb using a scalable arquitera, we can meet your needs and provide statistics on your shortened links."
+}, {
     "title": "Christopher EnyTC",
     "img": "/assets/img/portfolio/chrisenytc3.png",
     "link": "http://chris.enytc.com",
