@@ -1,0 +1,23 @@
+[{
+    "slug": "hello-world",
+    "title": "Hello World",
+    "url": "/#/articles/hello-world",
+    "thumbnail": "/img/blog/thumbnail.jpg",
+    "poster": "/img/blog/poster.jpg",
+    "createdAt": "2015-02-28T22:36:02.302Z",
+    "updateddAt": "2015-02-28T22:37:02.302Z",
+    "publishedAt": "2015-02-28T22:40:02.302Z",
+    "_author": {
+        "name": "Christopher EnyTC",
+        "url": "http://chris.enytc.com"
+    },
+    "views": 88,
+    "tags": [{
+        "name": "Hello"
+    }, {
+        "name": "world"
+    }, {
+        "name": "chrisenytc"
+    }],
+    "content": "<div class=\"dropcap\">Hi</div> <div class=\"details\">My name is Christopher EnyTC. I'm Back-End Developer and working with JavaScript/Node.js, Python and Ruby. This is my blog.</div>"
+}]

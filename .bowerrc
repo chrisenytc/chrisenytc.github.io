@@ -1,5 +1,5 @@
 {
 	
-	"directory": "assets/lib",
+	"directory": "js/dependencies",
 	"json": "bower.json"
 }

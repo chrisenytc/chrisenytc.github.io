@@ -1,0 +1,99 @@
+.break-text {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+.text-center {
+    text-align: center;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.refresh-btn {
+    position: absolute;
+    top: 93%;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    overflow-y: hidden;
+    color: #757474;
+}
+/* Alert Box CSS */
+/* Base Alert Style */
+
+.alert {
+    position: relative;
+    display: block;
+    padding: 1em 1.8em;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    background: transparent;
+    color: white;
+}
+/* Error */
+
+.alert-error {
+    background: #e74c3c;
+    border: 1px solid #c0392b;
+}
+/* Success */
+
+.alert-success {
+    background: #2ecc71;
+    border: 1px solid #27ae60;
+}
+/* Info */
+
+.alert-info {
+    background: #3498db;
+    border: 1px solid #2980b9;
+}
+/* Radius */
+
+.radius {
+    border-radius: 3px;
+}
+.chrisenytc-animate.ng-enter {
+    -webkit-animation: lightSpeedIn 1s;
+    -moz-animation: lightSpeedIn 1s;
+    -ms-animation: lightSpeedIn 1s;
+    animation: lightSpeedIn 1s;
+}
+.chrisenytc-animate.ng-move {
+    -webkit-animation: lightSpeedOut 1s;
+    -moz-animation: lightSpeedOut 1s;
+    -ms-animation: lightSpeedOut 1s;
+    animation: lightSpeedOut 1s;
+}
+.chrisenytc-animate.ng-leave {
+    -webkit-animation: hinge 1s;
+    -moz-animation: hinge 1s;
+    -ms-animation: hinge 1s;
+    animation: hinge 1s;
+}
+.chrisenytc-animate-show.ng-hide {
+    -webkit-animation: zoomOut 1s;
+    -moz-animation: zoomOut 1s;
+    -ms-animation: zoomOut 1s;
+    animation: zoomOut 1s;
+}
+.chrisenytc-animate-show, .chrisenytc-animate-show.ng-show {
+    -webkit-animation: zoomIn 1s;
+    -moz-animation: zoomIn 1s;
+    -ms-animation: zoomIn 1s;
+    animation: zoomIn 1s;
+}
+#disqus_thread {
+    color: #0099d5
+}
+#disqus_thread a {
+    color: #0099d5
+}

@@ -1,0 +1,73 @@
+/* Twitter feeds */
+
+#twitter-feeds ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.twitter-items {
+  list-style: none;
+  transition: 1s all ease;
+}
+
+.tweet {
+  text-align: left;
+  color: #777;
+  font-size: 16px;
+  font-family: 'Droid Serif', serif;
+  line-height: 1.5em;
+}
+
+.tweet a {
+  color: inherit !important;
+}
+
+.timePosted {
+  text-align: left;
+  color: #999;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Droid Serif', serif;
+}
+
+span[data-scribe="element:screen_name"],
+span[title="Verified Account"],
+.user img {
+  display: none !important;
+}
+
+.user {
+  text-align: left;
+}
+
+.user:hover {
+  opacity: 0.8;
+  text-decoration: none !important;
+}
+
+.user a span[data-scribe="element:name"] {
+  display: block;
+  font-family: 'Montserrat', serif;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #3A4145;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.interact {
+  text-align: left;
+  font-size: 14px;
+}
+
+.interact a {
+  display: inline-block;
+  margin: 0 5px;
+  font-family: 'Droid Serif', serif;
+}
+
+.interact a:first-child {
+  margin-left: 0 !important
+}

@@ -1,0 +1,59 @@
+#features,
+.download:hover,
+.briefcase,
+.skill-bar,
+#filter li a.active,
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span,
+#contact input[type="submit"]:hover,
+#comment-form input[type="submit"]:hover,
+#cd-zoom-in, 
+#cd-zoom-out,
+#cd-google-map address,
+.spinner,
+.btn:hover {
+	background: #ea4c89;
+}
+
+.title,
+.social li a,
+.job-title span,
+.list .icon,
+.interact a,
+.subscribe-notification,
+.rating {
+	color: #ea4c89;
+}
+
+.download:hover,
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus,
+#subscribe input[type="email"]:focus,
+#comment-form input[type="text"]:focus,
+#comment-form textarea:focus {
+	border-color: #ea4c89;
+}
+
+.words:before {
+	border-bottom: 12px solid #ea4c89;
+}
+
+#subscribe input[type="submit"],
+.words,
+.sending {
+	background-color: #ea4c89 !important;
+}
+
+.path {
+	stroke: #ea4c89 !important;
+}
+
+.quotes {
+	border-left: 4px solid #ea4c89;
+}
+
+.like-it,
+.reply {
+	color: #ea4c89 !important;
+}

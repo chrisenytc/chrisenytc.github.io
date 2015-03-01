@@ -1,1 +1,385 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Christopher EnyTC Portfolio and Blog"><meta name="keywords" content="chris, enytc, portfolio, blog, tutorials, freelancer, api, node, nodejs, mongodb, redis, html5, css3, javascript, jquery, angularjs"><meta name="author" content="/humans.txt"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="canonical" href=""><link rel="icon" type="image/png" href="/img/favicon.png"><title>Christopher EnyTC</title><!--[if lt IE 9]><script src="/assets/lib/html5shiv/dist/html5shiv.js"></script><![endif]--><link rel="stylesheet" href="/assets/css/font-awesome.min.css"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gudea"><link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.0.0/css/bootstrap.min.css"><link rel="stylesheet" href="/assets/css/style.min.css"><link rel="stylesheet" href="/assets/css/prism.css"></head><body data-ng-app="chrisApp"><div class="row"><div class="col-lg-3"><header class="header"><div class="header-wrap"><div class="logo"><img class="img-thumbnail" alt="" src="http://www.gravatar.com/avatar/95560a7a009026f7cab205de25bb9e13?s=200" width="200px" height="200px"><h1>Christopher</h1></div><div class="search-box"><input type="text" data-ng-model="searchBox" placeholder="Search..." class="form-control"></div><div class="social"><a href="https://facebook.com/chrisenytc" target="_blank" class="btn btn-transparent btn-medium"><i class="icon-facebook"></i></a> <a href="https://twitter.com/chrisenytc" target="_blank" class="btn btn-transparent btn-medium"><i class="icon-twitter"></i></a> <a href="https://linkedin.com/in/chrisenytc" target="_blank" class="btn btn-transparent btn-medium"><i class="icon-linkedin"></i></a> <a href="https://github.com/chrisenytc" target="_blank" class="btn btn-transparent btn-medium"><i class="icon-github"></i></a></div><nav class="main-nav"><ul class="nav nav-pills nav-stacked"><li class="active"><a href="/#/"><i class="icon-home"></i> Home</a></li><li><a href="/#/about"><i class="icon-user"></i> About me</a></li><li><a href="/#/projects"><i class="icon-github"></i> Projects</a></li><li><a href="/#/portfolio"><i class="icon-briefcase"></i> Portfolio</a></li><li><a href="/#/blog"><i class="icon-list"></i> Blog</a></li><li><a href="/#/contact"><i class="icon-envelope"></i> Contact</a></li></ul></nav></div></header></div><div class="col-lg-9"><div class="page-container"><div data-ng-view=""></div></div><footer class="footer"><div class="copyright"><p>Copyright &copy; Christopher EnyTC - 2014 - All rights reserved.</p></div></footer></div></div><script src="/assets/js/dependencies.min.js"></script><script src="http://cdn.jsdelivr.net/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="/assets/js/main.min.js"></script><script src="/assets/js/prism.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en" ng-app="chrisEnyTCApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Christopher EnyTC</title>
+    <meta name="description" content="Personal Website and Blog">
+    <meta name="author" content="Christopher EnyTC">
+    <meta name="keywords" content="labs,software,research,nodejs,sails,ruby,rails,python,django,mongodb,redis,mysql,html5,css3,javascript,angularjs,emberjs,reactjs,grunt,gulp,yeoman,slush,bower,git,heroku,openshift,wercker,codeship">
+    <meta property="og:title" content="Christopher EnyTC">
+    <meta property="og:description" content="Personal Website and Blog">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://chris.enytc.com">
+    <meta property="og:image" content="http://www.gravatar.com/avatar/95560a7a009026f7cab205de25bb9e13?s=400">
+    <meta property="og:site_name" content="Christopher EnyTC">
+    <meta property="fb:app_id" content="100000886729170">
+    <meta content="@chrisenytc" name="twitter:site" />
+    <meta content="summary" name="twitter:card" />
+    <meta content="Christopher EnyTC" name="twitter:title" />
+    <meta content="Personal Website and Blog" name="twitter:description" />
+    <meta content="http://www.gravatar.com/avatar/95560a7a009026f7cab205de25bb9e13?s=400" name="twitter:image:src" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Colors -->
+    <link rel="stylesheet" href="/css/colors/blue.css" title="blue">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/css/twitter.css">
+    <link rel="stylesheet" href="/css/preloader.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/css/carousel/owl.theme.css">
+    <link rel="stylesheet" href="/css/addons.css">
+
+    <!-- Google Font link -->
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet" type="text/css" data-noprefix="">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" data-noprefix="">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+
+    <!-- begin .preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <div class="preloader-left"></div>
+    <div class="preloader-right"></div>
+    <!-- end preloader -->
+
+    <!-- begin #main-container -->
+    <div id="main-container">
+        <!-- begin #profile -->
+        <div id="profile" class="profile">
+            <div id="page-profile" class="expand add-expand">
+                <h1>Profile</h1>
+                <img class="small-image icon icon-left fa" src="http://www.gravatar.com/avatar/95560a7a009026f7cab205de25bb9e13?s=128" alt="Christopher EnyTC">
+            </div>
+            <div class="main-content-profile">
+                <div class="close-icon-container">
+                    <a href="/#profile" class="close-icon expand-profile"></a>
+                </div>
+                <div class="summary">
+                    <img class="big-image" src="http://www.gravatar.com/avatar/95560a7a009026f7cab205de25bb9e13?s=128" alt="Christopher EnyTC">
+                    <a href="/">
+                        <img class="logo" src="/img/logo.png" alt="Christopher EnyTC">
+                    </a>
+                    <div class="occupation">Back-End Developer</div>
+                </div>
+                <p class="hi">
+                    <span class="dropcap">Hi</span><span class="detail"></span>
+                </p>
+                <div class="button">
+                    <form id="searchbox" role="form" class="row">
+                        <input type="text" name="searchBox" placeholder="Search..." class="placeholder" ng-model="searchBox">
+                        <button><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="social-container">
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/chrisenytc" target="_blank" class="fa fa-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/chrisenytc" target="_blank" class="fa fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/chrisenytc" target="_blank" class="fa fa-github"></a>
+                        </li>
+                        <li>
+                            <a href="mailto:chrisenytc@gmail.com" class="fa fa-envelope"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end #profile -->
+
+
+        <!-- begin #features -->
+        <div id="features" ng-hide="blogPage">
+            <!-- begin #resume -->
+            <div id="resume" class="absolute" ng-controller="aboutCtrl">
+                <div id="page-resume" class="expand add-expand">
+                    <h1>Resume</h1>
+                    <div class="detail">View My Resume</div>
+                    <div class="icon icon-left fa fa-file-o"></div>
+                </div>
+                <div class="main-content">
+                    <a href="#page-resume" class="close-icon expand"></a>
+                    <h1 class="title">My Resume</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="title">Work Experience</h2>
+                            <!-- begin #timeline -->
+                            <div id="timeline">
+                                <div class="timeline-item" ng-repeat="e in employments">
+                                    <div class="briefcase fa fa-briefcase"></div>
+                                    <div class="job">
+                                        <h2 class="job-title">{{ e.name }}<span> - {{ e.job_title }}</span></h2>
+                                        <h3 class="year">{{ e.start }} - {{ e.end }}</h3>
+                                        <div class="job-detail" ng-bind="e.resume"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end #timeline -->
+                        </div>
+                        <div class="col-md-5">
+                            <!-- begin #skills -->
+                            <div id="skills">
+                                <h2 class="title">My skills</h2>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">JavaScript</h3>
+                                    <div class="skill-bar-bg" data-percent="80%">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">Angular.js</h3>
+                                    <div class="skill-bar-bg" data-percent="70%">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">Node.js</h3>
+                                    <div class="skill-bar-bg" data-percent="90">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">Ruby</h3>
+                                    <div class="skill-bar-bg" data-percent="50">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">Python</h3>
+                                    <div class="skill-bar-bg" data-percent="50">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">Go</h3>
+                                    <div class="skill-bar-bg" data-percent="40">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">PHP</h3>
+                                    <div class="skill-bar-bg" data-percent="60">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">MySQL</h3>
+                                    <div class="skill-bar-bg" data-percent="80">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">MongoDB</h3>
+                                    <div class="skill-bar-bg" data-percent="70">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">RedisDB</h3>
+                                    <div class="skill-bar-bg" data-percent="50">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">GIT</h3>
+                                    <div class="skill-bar-bg" data-percent="80">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">Continuous Integration</h3>
+                                    <div class="skill-bar-bg" data-percent="65">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h3 class="skill-title">Continuous Deployment</h3>
+                                    <div class="skill-bar-bg" data-percent="60">
+                                        <div class="skill-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end #skills -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end #resume -->
+
+            <!-- begin #projects -->
+            <div id="portfolio" class="absolute" ng-controller="projectCtrl">
+                <div id="page-projects" class="expand add-expand">
+                    <h1>Projects</h1>
+                    <div class="detail">View My Projects</div>
+                    <div class="icon icon-left fa fa-github"></div>
+                </div>
+                <div class="main-content">
+                    <a href="#page-projects" class="close-icon expand"></a>
+                    <h1 class="title">My Projects ({{ github.reposLength }})</h1>
+
+                    <ul id="filter">
+                        <li><a class="active" href="javascript:void()" ng-click="languageFilter=''">All</a>
+                        </li>
+                        <li><a href="javascript:void()" ng-click="languageFilter='JavaScript'">JavaScript</a>
+                        </li>
+                        <li><a href="javascript:void()" ng-click="languageFilter='Python'">Python</a>
+                        </li>
+                        <li><a href="javascript:void()" ng-click="languageFilter='Ruby'">Ruby</a>
+                        </li>
+                        <li><a href="javascript:void()" ng-click="languageFilter='Go'">Go</a>
+                        </li>
+                        <li><a href="javascript:void()" ng-click="languageFilter='PHP'">PHP</a>
+                        </li>
+                        <li><a href="javascript:void()" ng-click="languageFilter='Shell'">Shell</a>
+                        </li>
+                        <li><a href="javascript:void()" ng-click="languageFilter=null">Others</a>
+                        </li>
+                    </ul>
+
+                    <div id="masonry-container" class="text-center">
+
+                        <div class="masonry-item chrisenytc-animate" ng-repeat="r in github.repositories | filter:{language: languageFilter}">
+                            <a class="overlay" ng-href="{{ r.html_url }}">
+                                <h1 class="break-text" ng-bind="r.name"></h1>
+                                <h4 ng-bind="r.description"></h4>
+                            </a>
+                            <img src="/img/gh-project.png" alt="{{ r.name }}">
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <a class="btn" href="javascript:void()" ng-click="github.loadMore()" ng-disabled="github.loading"><i class="fa fa-plus" ng-class="{'fa-spinner fa-spin': github.loading}"></i> Load More</a>
+
+                </div>
+            </div>
+            <!-- end #projects -->
+
+            <!-- begin #blog -->
+            <div id="blog" class="absolute" ng-controller="blogCtrl">
+                <div id="page-blog" class="expand add-expand">
+                    <h1>Blog</h1>
+                    <div class="detail">Read My Articles</div>
+                    <div class="icon icon-left fa fa-pencil"></div>
+                </div>
+                <div class="main-content">
+                    <a href="#page-blog" class="close-icon expand"></a>
+                    <h1 class="title">My Blog</h1>
+                    <div class="blog-row row">
+                        <div id="blog-list-container" class="col-md-12">
+
+                            <!-- begin #blog-item -->
+                            <div class="col-md-5 chrisenytc-animate" ng-repeat="article in blog.articles | filter:searchBox" page-size="4" tolerance="200">
+                                <div class="blog-item">
+                                    <a class="overlay" ng-href="{{ article.url }}">
+                                        <h1>Read More</h1>
+                                    </a>
+                                    <img ng-src="{{ article.thumbnail }}" alt="{{ article.title }}">
+                                    <div class="detail row">
+                                        <div class="date">
+                                            <span ng-bind="formatDay(article.publishedAt)"></span>
+                                            <span ng-bind="formatMonth(article.publishedAt)"></span>
+                                        </div>
+                                        <div class="like">
+                                            <span class="fa fa-eye"></span>
+                                            <span ng-bind="article.views"></span>
+                                        </div>
+                                        <div class="blog-title" ng-bind="article.title"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end #blog-item -->
+
+                            <div class="clearfix"></div>
+
+                            <a class="btn" href="javascript:void()" ng-click="blog.loadMore()" ng-disabled="blog.loading"><i class="fa fa-plus" ng-class="{'fa-spinner fa-spin': blog.loading}"></i> Load More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end #blog -->
+
+            <!-- begin #contact -->
+            <div id="contact" class="absolute">
+                <div id="page-contact" class="expand add-expand">
+                    <h1>Contact</h1>
+                    <div class="detail">Get in Touch</div>
+                    <div class="icon icon-left fa fa-envelope-o"></div>
+                </div>
+                <div class="main-content">
+                    <a href="#page-contact" class="close-icon expand"></a>
+                    <h1 class="title">Contact Me</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="title">Latest tweets</h2>
+                            <div id="twitter">
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <h2 class="title">Send Me A Email</h2>
+                            <ul class="list">
+                                <li>
+                                    <div class="icon fa fa-envelope-o"></div> chris@enytc.com
+                                </li>
+                                <li>
+                                    <div class="icon fa fa-envelope-o"></div> chrisenytc@gmail.com
+                                </li>
+                                <li>
+                                    <div class="icon fa fa-skype"></div> chrisenytc
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end #contact -->
+
+        </div>
+        <!-- end #features -->
+
+        <!-- begin #article -->
+        <div id="blog-post" class="full-blog" ng-show="blogPage && !notFound" ng-view></div>
+        <!-- end #article -->
+
+    </div>
+    <!-- end #main-container -->
+
+    <!-- JavaScript Files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/prefixfree.min.js"></script>
+    <script src="/js/vendor/fastclick.js"></script>
+    <script src="/js/vendor/jquery.validate.min.js"></script>
+    <script src="/js/vendor/jquery.typer.js"></script>
+    <script src="/js/vendor/morphext.min.js"></script>
+    <script src="/js/vendor/twitterFetcher.min.js"></script>
+    <script src="/js/smoothScrolls.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/twitter.js"></script>
+    <script src="/js/dependencies/moment/min/moment-with-locales.min.js"></script>
+    <!-- Angular Dependencies -->
+    <script src="/js/dependencies/angular/angular.min.js"></script>
+    <script src="/js/dependencies/angular-route/angular-route.min.js"></script>
+    <script src="/js/dependencies/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/js/dependencies/angular-animate/angular-animate.min.js"></script>
+    <script src="/js/dependencies/angular-highlightjs/build/angular-highlightjs.min.js"></script>
+    <!-- Angular Application -->
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers.js"></script>
+</body>
+
+</html>
