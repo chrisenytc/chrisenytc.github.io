@@ -18,4 +18,4 @@ $ serve .
 
 ## License
 
-Check [here](LICENSE.md).
+Check [here](LICENSE).
