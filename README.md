@@ -4,16 +4,16 @@
 
 ## Usage
 
-Install serve
+Install dependencies
 
 ```bash
-$ npm install -g serve
+$ npm install
 ```
 
 Run Project
 
 ```bash
-$ serve .
+$ npm start
 ```
 
 ## License
