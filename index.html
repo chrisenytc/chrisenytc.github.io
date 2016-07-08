@@ -1,385 +1,256 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="chrisEnyTCApp">
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <title>Christopher EnyTC</title>
-    <meta name="description" content="Personal Website and Blog">
-    <meta name="author" content="Christopher EnyTC">
-    <meta name="keywords" content="labs,software,research,nodejs,sails,ruby,rails,python,django,mongodb,redis,mysql,html5,css3,javascript,angularjs,emberjs,reactjs,grunt,gulp,yeoman,slush,bower,git,heroku,openshift,wercker,codeship">
-    <meta property="og:title" content="Christopher EnyTC">
-    <meta property="og:description" content="Personal Website and Blog">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://chris.enytc.com">
-    <meta property="og:image" content="http://www.gravatar.com/avatar/95560a7a009026f7cab205de25bb9e13?s=400">
-    <meta property="og:site_name" content="Christopher EnyTC">
-    <meta property="fb:app_id" content="100000886729170">
-    <meta content="@chrisenytc" name="twitter:site" />
-    <meta content="summary" name="twitter:card" />
-    <meta content="Christopher EnyTC" name="twitter:title" />
-    <meta content="Personal Website and Blog" name="twitter:description" />
-    <meta content="http://www.gravatar.com/avatar/95560a7a009026f7cab205de25bb9e13?s=400" name="twitter:image:src" />
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Christopher's personal website">
+    <meta name="author" content="Christopher EnyTC">
+    <!-- Page title
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<title>Christopher EnyTC</title>
 
-    <!-- Colors -->
-    <link rel="stylesheet" href="/css/colors/blue.css" title="blue">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="/css/twitter.css">
-    <link rel="stylesheet" href="/css/preloader.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/animate.css">
-    <link rel="stylesheet" href="/css/font-awesome.css">
-    <link rel="stylesheet" href="/css/carousel/owl.carousel.css">
-    <link rel="stylesheet" href="/css/carousel/owl.theme.css">
-    <link rel="stylesheet" href="/css/addons.css">
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <!-- Icons
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="/assets/icons/Linea/styles.css" />
+    <link rel="stylesheet" href="/assets/icons/Elegant/style.css" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="/assets/js/modernizr.js"></script>
 
-    <!-- Google Font link -->
-    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet" type="text/css" data-noprefix="">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" data-noprefix="">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico">
-</head>
+  </head>
 
+<!-- Body Start
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
-
-    <!-- begin .preloader -->
-    <div class="preloader">
-        <div class="spinner"></div>
+<!-- Loader
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
     </div>
-    <div class="preloader-left"></div>
-    <div class="preloader-right"></div>
-    <!-- end preloader -->
+    <h3 class="title-load">Loading</h3>
+  </div>
 
-    <!-- begin #main-container -->
-    <div id="main-container">
-        <!-- begin #profile -->
-        <div id="profile" class="profile">
-            <div id="page-profile" class="expand add-expand">
-                <h1>Profile</h1>
-                <img class="small-image icon icon-left fa" src="http://www.gravatar.com/avatar/95560a7a009026f7cab205de25bb9e13?s=128" alt="Christopher EnyTC">
-            </div>
-            <div class="main-content-profile">
-                <div class="close-icon-container">
-                    <a href="/#profile" class="close-icon expand-profile"></a>
-                </div>
-                <div class="summary">
-                    <img class="big-image" src="http://www.gravatar.com/avatar/95560a7a009026f7cab205de25bb9e13?s=128" alt="Christopher EnyTC">
-                    <a href="/">
-                        <img class="logo" src="/img/logo.png" alt="Christopher EnyTC">
-                    </a>
-                    <div class="occupation">Back-End Developer</div>
-                </div>
-                <p class="hi">
-                    <span class="dropcap">Hi</span><span class="detail"></span>
-                </p>
-                <div class="button">
-                    <form id="searchbox" role="form" class="row">
-                        <input type="text" name="searchBox" placeholder="Search..." class="placeholder" ng-model="searchBox">
-                        <button><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-                <div class="social-container">
-                    <ul class="social">
-                        <li>
-                            <a href="https://www.facebook.com/chrisenytc" target="_blank" class="fa fa-facebook"></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/chrisenytc" target="_blank" class="fa fa-twitter"></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/chrisenytc" target="_blank" class="fa fa-github"></a>
-                        </li>
-                        <li>
-                            <a href="mailto:chrisenytc@gmail.com" class="fa fa-envelope"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- end #profile -->
+<!-- Header Bar
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <header id="headerBar" class="headerTop">
 
+        <div class="container-fluid">
 
-        <!-- begin #features -->
-        <div id="features" ng-hide="blogPage">
-            <!-- begin #resume -->
-            <div id="resume" class="absolute" ng-controller="aboutCtrl">
-                <div id="page-resume" class="expand add-expand">
-                    <h1>Resume</h1>
-                    <div class="detail">View My Resume</div>
-                    <div class="icon icon-left fa fa-file-o"></div>
-                </div>
-                <div class="main-content">
-                    <a href="#page-resume" class="close-icon expand"></a>
-                    <h1 class="title">My Resume</h1>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2 class="title">Work Experience</h2>
-                            <!-- begin #timeline -->
-                            <div id="timeline">
-                                <div class="timeline-item" ng-repeat="e in employments">
-                                    <div class="briefcase fa fa-briefcase"></div>
-                                    <div class="job">
-                                        <h2 class="job-title">{{ e.name }}<span> - {{ e.job_title }}</span></h2>
-                                        <h3 class="year">{{ e.start }} - {{ e.end }}</h3>
-                                        <div class="job-detail" ng-bind="e.resume"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end #timeline -->
-                        </div>
-                        <div class="col-md-5">
-                            <!-- begin #skills -->
-                            <div id="skills">
-                                <h2 class="title">My skills</h2>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">JavaScript</h3>
-                                    <div class="skill-bar-bg" data-percent="80%">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">Angular.js</h3>
-                                    <div class="skill-bar-bg" data-percent="70%">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">Node.js</h3>
-                                    <div class="skill-bar-bg" data-percent="90">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">Ruby</h3>
-                                    <div class="skill-bar-bg" data-percent="50">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">Python</h3>
-                                    <div class="skill-bar-bg" data-percent="50">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">Go</h3>
-                                    <div class="skill-bar-bg" data-percent="40">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">PHP</h3>
-                                    <div class="skill-bar-bg" data-percent="60">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">MySQL</h3>
-                                    <div class="skill-bar-bg" data-percent="80">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">MongoDB</h3>
-                                    <div class="skill-bar-bg" data-percent="70">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">RedisDB</h3>
-                                    <div class="skill-bar-bg" data-percent="50">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">GIT</h3>
-                                    <div class="skill-bar-bg" data-percent="80">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">Continuous Integration</h3>
-                                    <div class="skill-bar-bg" data-percent="65">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h3 class="skill-title">Continuous Deployment</h3>
-                                    <div class="skill-bar-bg" data-percent="60">
-                                        <div class="skill-bar"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end #skills -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end #resume -->
+          <!--Header logo on the left side-->
 
-            <!-- begin #projects -->
-            <div id="portfolio" class="absolute" ng-controller="projectCtrl">
-                <div id="page-projects" class="expand add-expand">
-                    <h1>Projects</h1>
-                    <div class="detail">View My Projects</div>
-                    <div class="icon icon-left fa fa-github"></div>
-                </div>
-                <div class="main-content">
-                    <a href="#page-projects" class="close-icon expand"></a>
-                    <h1 class="title">My Projects ({{ github.reposLength }})</h1>
+          <div class="col-md-4 col-sm-1 col-xs-4 headerLeft">
+          <a href="/">
+            <img src="/assets/images/logo.png" alt="">
+          </a>
+          </div>
 
-                    <ul id="filter">
-                        <li><a class="active" href="javascript:void()" ng-click="languageFilter=''">All</a>
-                        </li>
-                        <li><a href="javascript:void()" ng-click="languageFilter='JavaScript'">JavaScript</a>
-                        </li>
-                        <li><a href="javascript:void()" ng-click="languageFilter='Python'">Python</a>
-                        </li>
-                        <li><a href="javascript:void()" ng-click="languageFilter='Ruby'">Ruby</a>
-                        </li>
-                        <li><a href="javascript:void()" ng-click="languageFilter='Go'">Go</a>
-                        </li>
-                        <li><a href="javascript:void()" ng-click="languageFilter='PHP'">PHP</a>
-                        </li>
-                        <li><a href="javascript:void()" ng-click="languageFilter='Shell'">Shell</a>
-                        </li>
-                        <li><a href="javascript:void()" ng-click="languageFilter=null">Others</a>
-                        </li>
+          <!--Header right side with left-aligned menu-->
+
+          <div class="col-md-8 col-sm-11 col-xs-8 headerRight">
+            <div class="header-right">
+
+              <!--Navigation-->
+              <nav class="navigation">
+
+                <div class="navbar-header">
+                  <span class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <i class="fa fa-bars"></i>
+                  </span>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="navbar navbar-right">
+                      <li><a href="#sectionIntro" class="easing">Home</a></li>
+                      <li><a href="#sectionAbout" class="easing">About</a></li>
+					  <li><a href="#sectionTalks" class="easing">Talks</a></li>
+                      <li><a href="#sectionJournal" class="easing">Articles</a></li>
+					  <li><a href="https://medium.com/@chrisenytc" target="_blank">Blog</a></li>
+
+					  <li><a href="https://github.com/chrisenytc" target="_blank">GitHub</a></li>
                     </ul>
 
-                    <div id="masonry-container" class="text-center">
-
-                        <div class="masonry-item chrisenytc-animate" ng-repeat="r in github.repositories | filter:{language: languageFilter}">
-                            <a class="overlay" ng-href="{{ r.html_url }}">
-                                <h1 class="break-text" ng-bind="r.name"></h1>
-                                <h4 ng-bind="r.description"></h4>
-                            </a>
-                            <img src="/img/gh-project.png" alt="{{ r.name }}">
-                        </div>
-
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <a class="btn" href="javascript:void()" ng-click="github.loadMore()" ng-disabled="github.loading"><i class="fa fa-plus" ng-class="{'fa-spinner fa-spin': github.loading}"></i> Load More</a>
-
                 </div>
+
+              </nav>
+              <!--END Navigation-->
+
             </div>
-            <!-- end #projects -->
+          </div>
+           <!--END Header right side-->
 
-            <!-- begin #blog -->
-            <div id="blog" class="absolute" ng-controller="blogCtrl">
-                <div id="page-blog" class="expand add-expand">
-                    <h1>Blog</h1>
-                    <div class="detail">Read My Articles</div>
-                    <div class="icon icon-left fa fa-pencil"></div>
-                </div>
-                <div class="main-content">
-                    <a href="#page-blog" class="close-icon expand"></a>
-                    <h1 class="title">My Blog</h1>
-                    <div class="blog-row row">
-                        <div id="blog-list-container" class="col-md-12">
-
-                            <!-- begin #blog-item -->
-                            <div class="col-md-5 chrisenytc-animate" ng-repeat="article in blog.articles | filter:searchBox" page-size="4" tolerance="200">
-                                <div class="blog-item">
-                                    <a class="overlay" ng-href="{{ article.url }}">
-                                        <h1>Read More</h1>
-                                    </a>
-                                    <img ng-src="{{ article.thumbnail }}" alt="{{ article.title }}">
-                                    <div class="detail row">
-                                        <div class="date">
-                                            <span ng-bind="formatDay(article.publishedAt)"></span>
-                                            <span ng-bind="formatMonth(article.publishedAt)"></span>
-                                        </div>
-                                        <div class="like">
-                                            <span class="fa fa-eye"></span>
-                                            <span ng-bind="article.views"></span>
-                                        </div>
-                                        <div class="blog-title" ng-bind="article.title"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end #blog-item -->
-
-                            <div class="clearfix"></div>
-
-                            <a class="btn" href="javascript:void()" ng-click="blog.loadMore()" ng-disabled="blog.loading"><i class="fa fa-plus" ng-class="{'fa-spinner fa-spin': blog.loading}"></i> Load More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end #blog -->
-
-            <!-- begin #contact -->
-            <div id="contact" class="absolute">
-                <div id="page-contact" class="expand add-expand">
-                    <h1>Contact</h1>
-                    <div class="detail">Get in Touch</div>
-                    <div class="icon icon-left fa fa-envelope-o"></div>
-                </div>
-                <div class="main-content">
-                    <a href="#page-contact" class="close-icon expand"></a>
-                    <h1 class="title">Contact Me</h1>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2 class="title">Latest tweets</h2>
-                            <div id="twitter">
-                            </div>
-                        </div>
-
-                        <div class="col-md-5">
-                            <h2 class="title">Send Me A Email</h2>
-                            <ul class="list">
-                                <li>
-                                    <div class="icon fa fa-envelope-o"></div> chris@enytc.com
-                                </li>
-                                <li>
-                                    <div class="icon fa fa-envelope-o"></div> chrisenytc@gmail.com
-                                </li>
-                                <li>
-                                    <div class="icon fa fa-skype"></div> chrisenytc
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end #contact -->
 
         </div>
-        <!-- end #features -->
+        <!--END container-->
+      </header>
+      <!--END Header bar-->
 
-        <!-- begin #article -->
-        <div id="blog-post" class="full-blog" ng-show="blogPage && !notFound" ng-view></div>
-        <!-- end #article -->
+
+
+<!-- section Intro
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	
+      <section id="sectionIntro" class="parallax">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="container-fluid">
+
+            <div class="textIntro">
+              <div class="hi">
+              <h1>Christopher EnyTC</h1>
+              <a href="#sectionAbout" class="easing">
+              <img src="/assets/images/arrow.png" alt="">
+              </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section> 
+
+
+
+<!-- section About
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <section id="sectionAbout">
+
+      <div class="container">
+        <div class="sectionTitle">
+          <h1>About Me</h1>
+		  <span>Back-End Engineer & Developer Evangelist</span>
+        </div>
+
+        <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 story">
+			<p>I am a <strong>23 years</strong> old guy who love the open-source world and create awesome things with different programing languages, I started learning programming when I had <strong>10 years</strong> old and since then I really love do this. I have been working with Node.js for the past <strong>4 years</strong>. Currently working at <strong>Pagar.me</strong> as <strong>Developer Evangelist</strong.</p>
+		</div>
+
+        </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+		
+<!-- section Talks
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		
+    <section id="sectionTalks"> 
+
+      <div class="container">
+
+        <div class="sectionTitle">
+          <h1>Upcoming Talks</h1>
+        </div>
+
+        <div class="resume-line row">
+
+        <div class="col-md-3 col-sm-4 col-xs-12 resume-left">
+        <h3>July, 5</h3>
+		<span>2016</span>
+        </div>
+
+        <div class="col-md-9 col-sm-8 col-xs-12 resume-right first-right">
+        <h3>NodeConf Brazil</h3>
+		<a href="http://brazil.nodeconf.com" target="_blank">View the conference page</a>
+        </div>
+
+        </div>
+
+      </div>
+         
+    </section>
+
+
+<!-- section Journal
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		
+    <section id="sectionJournal">
+
+    <div class="container">
+
+    <div class="sectionTitle">
+      <h1>Recent Articles</h1>
+    </div>
+
+    <div class="row journal-line">
+    <div class="col-md-6 col-sm-12 col-xs-12 journal-text">
+    <h1>Living in a different reality</h1>
+    <a href="https://medium.com/p/aa2bc70452b5" target="_blank">Read this article</a>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 journal-image">
+    <div class="category">
+    Life
+    </div>
+    <img src="/assets/images/blog.jpg" alt="Blog post">
+    </div>
+    </div>
 
     </div>
-    <!-- end #main-container -->
 
-    <!-- JavaScript Files -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/prefixfree.min.js"></script>
-    <script src="/js/vendor/fastclick.js"></script>
-    <script src="/js/vendor/jquery.validate.min.js"></script>
-    <script src="/js/vendor/jquery.typer.js"></script>
-    <script src="/js/vendor/morphext.min.js"></script>
-    <script src="/js/vendor/twitterFetcher.min.js"></script>
-    <script src="/js/smoothScrolls.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/twitter.js"></script>
-    <script src="/js/dependencies/moment/min/moment-with-locales.min.js"></script>
-    <!-- Angular Dependencies -->
-    <script src="/js/dependencies/angular/angular.min.js"></script>
-    <script src="/js/dependencies/angular-route/angular-route.min.js"></script>
-    <script src="/js/dependencies/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="/js/dependencies/angular-animate/angular-animate.min.js"></script>
-    <script src="/js/dependencies/angular-highlightjs/build/angular-highlightjs.min.js"></script>
-    <!-- Angular Application -->
-    <script src="/js/app.js"></script>
-    <script src="/js/controllers.js"></script>
-</body>
+    </section>
 
+
+  <!-- Footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+       <footer class="pFooter">
+
+            <div class="container-fluid">
+
+                <div class="col-md-6 col-sm-12 col-xs-12 fCopy">
+                Copyright © 2016 <span>Christopher EnyTC</span>. All rights reserved.
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-xs-12 fIcons">
+                <a href="https://facebook.com/chrisenytc" target="_blank">
+                <span aria-hidden="true" class="social_facebook_circle"></span>
+                </a>
+                <a href="https://twitter.com/chrisenytc" target="_blank">
+                <span aria-hidden="true" class="social_twitter_circle"></span>
+                </a>
+                <a href="https://medium.com/@chrisenytc" target="_blank">
+                <span aria-hidden="true" class="social_rss_circle"></span>
+                </a>
+                </div>
+
+            </div>
+
+        </footer>
+
+<!--  Javascripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <script src="/assets/js/jquery-2.1.3.js"></script>
+      <script src="/assets/js/bootstrap.js"></script>
+      <script src="/assets/js/modernizr.custom.js"></script>
+      <!-- Navigation menu-->
+      <script src="/assets/js/classie.js"></script>
+      <script src="/assets/js/menu-top.js"></script>
+      <script src="/assets/js/nav-active.js"></script>
+      <script src="/assets/js/jquery.easing.js"></script>
+      <!--JS ALL SCRIPTS CALLS-->
+      <script src="/assets/js/scripts.js"></script>
+      <!-- WOW ANIMATIONS -->
+      <script src="/assets/js/wow.min.js"></script>
+      <script src="/assets/js/jquery-parallax.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+
+  </body>
 </html>
