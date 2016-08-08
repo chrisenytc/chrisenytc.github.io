@@ -1,6 +1,6 @@
 {
     "name": "chrisenytc",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "title": "Christopher EnyTC",
     "homepage": "http://chris.enytc.com",
     "description": "Personal website",
@@ -17,7 +17,7 @@
     "bugs": {
         "url": "https://github.com/chrisenytc/chrisenytc.github.io/issues"
     },
-    "licenses": "CC0-1.0",
+    "licenses": "http://creativecommons.org/licenses/by/3.0/",
     "scripts": {
         "test": "echo \"No have tests\"",
         "start": "serve -p 3000 -f favicon.ico"
