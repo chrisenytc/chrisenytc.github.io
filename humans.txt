@@ -17,7 +17,7 @@ Name: Chris.EnyTC.com
 
 /* SITE */
 
-Last update: 2016/07/8
+Last update: 2016/08/8
 Standards: HTML5, CSS3, JavaScript.
 Components: jQuery, Bootstrap.
-Software: MacVim, Serve.
+Software: VimR, Serve.
